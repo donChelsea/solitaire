@@ -86,5 +86,7 @@ object GameModel {
         return false
     }
 
-
+    fun debugPrint() {
+        println(deck.cardsInDeck.last())
+    }
 }

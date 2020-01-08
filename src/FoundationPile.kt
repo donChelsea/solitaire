@@ -12,7 +12,7 @@ class FoundationPile(val suit: String) {
     fun addCard(card: Card): Boolean {
         var nextValue = 0
         if (cards.size > 0) {
-            nextValue = cards.last.value + 1
+            nextValue = cards.last().value + 1
         }
         if (card.suit == suit && card.value == nextValue) {
             cards.add(card)

@@ -1,4 +1,4 @@
-class GameModel {
+object GameModel {
 
     val deck = Deck()
     val wastePile: MutableList<Card> = mutableListOf()
@@ -85,4 +85,6 @@ class GameModel {
         }
         return false
     }
+
+
 }
